@@ -1,2 +1,3 @@
 # Barbershop-EN-hw-01
-Home work 1
+
+use https://squoosh.app/editor for photo compression
