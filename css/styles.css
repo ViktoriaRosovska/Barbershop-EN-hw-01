@@ -45,3 +45,71 @@ a {
     outline: 1px solid red;
     background-color: beige;
 }
+
+.notification {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+  color:azure;
+  
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: palevioletred;
+  height: 50px;
+  overflow: hidden;
+  flex-wrap: wrap;
+ }
+
+.notification--success {
+  background-color: green;
+
+}
+
+.notification--error {
+  background-color: red;
+  
+ 
+}
+
+.notification--warning {
+  background-color: orange;
+}
+
+.notification__icon {
+ font-size: 40px;
+ display: none;
+}
+
+.notification__icon--append {
+  margin-left: 20px;
+}
+.notification__icon--prepend {
+  margin-right: 20px;
+}
+
+.notification:hover .notification__icon{
+  display: inline;
+  padding-right: 20px;
+}
+
+.notification:hover{
+  overflow: visible;
+  height: max-content;
+  min-height: 50px;
+  
+  
+  
+}
+.notification--error__label {
+ line-height: 2.5;
+ 
+}
+
+.warning-text{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}

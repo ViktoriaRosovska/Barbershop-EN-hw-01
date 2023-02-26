@@ -11,39 +11,53 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="section">
-      <div class="container">
-        <div class="logo">
-          <svg class="logo__icon" width="" height="">
-            <use href=""></use>
-          </svg>
-        </div>
-        <nav>
+    <!-- --------------------------------------------------------HEADER SECTION---------------------------------------------------------------->
+    <header class="section section--header">
+      <div class="container container--header">
+        <nav class="section--header__nav">
+          <a class="logo" href="">
+            <svg class="logo__icon" width="" height="">
+              <use href=""></use>
+            </svg>
+          </a>
           <ul class="nav-list">
-            <li><a>About</a></li>
-            <li><a>Services and prices</a></li>
-            <li><a>Barbers</a></li>
-            <li><a>Contacts</a></li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="">About</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="">Services and prices</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="">Barbers</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="">Contacts</a>
+            </li>
           </ul>
         </nav>
-        <a href="mailto:+38 044 111 11 11">+38 044 111 11 11</a>
-        <button type="submit">Online-booking</button>
+        <a class="header-contacts" href="tel:+38 044 111 11 11"
+          >+38 044 111 11 11</a
+        >
+        <button class="header__booking-btn btn" type="submit">
+          Online-booking
+        </button>
       </div>
     </header>
     <main>
-      <section class="section">
-        <div class="container">
-          <p>A hair salon for men in Kyiv</p>
-          <h1>BarberShop</h1>
-          <p>
-            We are experts in trendy men’s haircuts. We work quickly, carefully
-            and with style.
+      <!-- ---------------------------------------------------------HERO SECTION--------------------------------------------------------------->
+      <section class="section section--hero">
+        <div class="container container--hero">
+          <p class="section__overhead-title">A hair salon for men in Kyiv</p>
+          <h1 class="section__main-section-title">BarberShop</h1>
+          <p class="section__subtitle">
+            We are experts in trendy men&apos;s haircuts. We work quickly,
+            carefully and with style.
           </p>
-          <ul>
-            <li><a>Instagram</a></li>
-            <li><a>Youtube</a></li>
+          <ul class="socials-list">
+            <li class="socials-list__item"><a>Instagram</a></li>
+            <li class="socials-list__item"><a>Youtube</a></li>
           </ul>
-          <div>
+          <div class="slide-show">
             <ul>
               <li>1</li>
               <li>2</li>
@@ -54,115 +68,190 @@
           </div>
         </div>
       </section>
-      <section class="section about-section">
-        <div class="container">
-          <ul>
-            <li>photo 1</li>
-            <li>photo 2</li>
+      <section class="section section--about">
+        <div class="container container--about">
+          <ul class="section--about__list">
+            <li class="section--about__item">photo 1</li>
+            <li class="section--about__item">photo 2</li>
           </ul>
-          <p>About</p>
-          <h2>Best Barbershop in your city</h2>
-          <p>
+          <p class="section__overhead-title">About</p>
+          <h2 class="section__title">Best Barbershop in your city</h2>
+          <p class="section__subtitle">
             If you want to add more confidence to your image, you should
             definitely visit us.
           </p>
-          <p>
+          <p class="section__paragraph">
             We are a team that never stops at what has been achieved and are
             thirsty for changes. And when you fall into the hands of our master,
             you will never be the same again. We are a team that is always "on
             the same wave" with clients. Therefore, we are always ready to
             improve everyone who comes to us!
           </p>
-          <button type="submit">ONLINE-BOOKING</button>
+          <button class="btn" type="submit">ONLINE-BOOKING</button>
+          <div style="padding: 20px; border: 1px solid blueviolet; width: 30%">
+            <p class="notification notification--success">
+              <span class="notification__icon notification__icon--prepend"
+                >🚀</span
+              >
+              Пополнение счета выполнено
+            </p>
+            <p class="notification notification--warning">
+              Внимание, будут изменены тарифы
+            </p>
+            <p class="notification notification--error">
+              <span class="notification--error__label"
+                >Ошибка проведения транзакций</span
+              >
+              <span class="warning-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                quisquam omnis voluptates unde reprehenderit distinctio a
+                tenetur consectetur dolore accusamus!
+
+                <span class="notification__icon notification__icon--append"
+                  >👨‍🚀</span
+                ></span
+              >
+            </p>
+          </div>
         </div>
       </section>
-      <section class="section">
-        <div class="container">
-          <p>Spend your time with the best masters</p>
-          <h2>Services and prices</h2>
-          <ul>
-            <li>
-              <ul>
-                <li>Men’s haircut from 300 uah.</li>
-                <li>Beard trim from 300 uah.</li>
-                <li>Mustache trim from 200 uah.</li>
-                <li>Straight razor shave from 200 uah.</li>
+      <!-- -----------------------------------------------------------PRICES SECTION------------------------------------------------------------->
+      <section class="section section--prices">
+        <div class="container container--prices">
+          <p class="section__overhead-title">
+            Spend your time with the best masters
+          </p>
+          <h2 class="section__title">Services and prices</h2>
+          <ul class="prices-list">
+            <li class="prices-list__item">
+              <ul class="prices-list__sublist">
+                <li class="prices-list__subitem">
+                  Men’s haircut from 300 uah.
+                </li>
+                <li class="prices-list__subitem">Beard trim from 300 uah.</li>
+                <li class="prices-list__subitem">
+                  Mustache trim from 200 uah.
+                </li>
+                <li class="prices-list__subitem">
+                  Straight razor shave from 200 uah.
+                </li>
               </ul>
             </li>
-            <li>
-              <ul>
-                <li>Trainee’s haircut from 50 uah.</li>
-                <li>Haircut under the nozzle from 200 uah.</li>
-                <li>Children’s haircut (0-12 y.o.) from 300 uah.</li>
-                <li>Camouflage of gray hair from 200 uah.</li>
+            <li class="prices-list__item">
+              <ul class="prices-list__sublist">
+                <li class="prices-list__subitem">
+                  Trainee’s haircut from 50 uah.
+                </li>
+                <li class="prices__subitem">
+                  Haircut under the nozzle from 200 uah.
+                </li>
+                <li class="prices-list__subitem">
+                  Children’s haircut (0-12 y.o.) from 300 uah.
+                </li>
+                <li class="prices-list__subitem">
+                  Camouflage of gray hair from 200 uah.
+                </li>
               </ul>
             </li>
           </ul>
-          <button type="submit">online-booking</button>
+          <button class="btn" type="submit">online-booking</button>
         </div>
       </section>
-      <section class="section">
-        <div class="container">
-          <ul>
-            <li>600 + Satisfied customers per day</li>
-            <li>20 + Kyiv’s best barbers</li>
-            <li>50 + Awards for excellent service</li>
-            <li>100 + Gifts for regular customers</li>
+      <section class="section section--advantages">
+        <div class="container container--advantages">
+          <ul class="advantages-list">
+            <li class="advantages-list__item">
+              600 + Satisfied customers per day
+            </li>
+            <li class="advantages-list__item">20 + Kyiv’s best barbers</li>
+            <li class="advantages-list__item">
+              50 + Awards for excellent service
+            </li>
+            <li class="advantages-list__item">
+              100 + Gifts for regular customers
+            </li>
           </ul>
-          <p>Old traditional school</p>
-          <h2>¿Why people come to us?</h2>
-          <p>
+          <p class="section__overhead-title">Old traditional school</p>
+          <h2 class="section__title">¿Why people come to us?</h2>
+          <p class="section__paragraph">
             Only good things are said about us. But it's better to see and feel
             1 time than read 10 times.
           </p>
         </div>
       </section>
-      <section class="section">
-        <div class="container">
-          <p>For true enjoyers of the atmosphere</p>
-          <h2>Our barbers</h2>
-          <ul>
-            <li>
+      <!-- ------------------------------------------------------------------------------------------------------------------------>
+      <section class="section section--teams">
+        <div class="container container--teams">
+          <p class="section__overhead-title">
+            For true enjoyers of the atmosphere
+          </p>
+          <h2 class="section__title">Our barbers</h2>
+          <ul class="team-list">
+            <li class="team-list__item">
               <div>
-                <img src="" alt="" width="" />
+                <img class="team-list__barber-photo" src="" alt="" width="" />
                 <div>
-                  <h3>John Smith</h3>
-                  <p>Extreme Barber</p>
-                  <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+                  <h3 class="team-list__barber-name">John Smith</h3>
+                  <p class="team-list__barber-position">Extreme Barber</p>
+                  <ul class="social-media">
+                    <li class="social-media__item">
+                      <a class="social-media__link" href=""></a>
+                    </li>
+                    <li class="social-media__item">
+                      <a class="social-media__link" href=""></a>
+                    </li>
+                    <li class="social-media__item">
+                      <a class="social-media__link" href=""></a>
+                    </li>
+                    <li class="social-media__item">
+                      <a class="social-media__link" href=""></a>
+                    </li>
                   </ul>
                 </div>
               </div>
             </li>
-            <li>
+            <li class="team-list__item">
               <div>
-                <img src="" alt="" width="" />
+                <img class="team-list__barber-photo" src="" alt="" width="" />
                 <div>
-                  <h3>Michele Doe</h3>
-                  <p>Extreme Barber</p>
-                  <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+                  <h3 class="team-list__barber-name">Michele Doe</h3>
+                  <p class="team-list__barber-position">Extreme Barber</p>
+                  <ul class="social-media">
+                    <li class="social-media__item">
+                      <a class="social-media__link" href=""></a>
+                    </li>
+                    <li class="social-media__item">
+                      <a class="social-media__link" href=""></a>
+                    </li>
+                    <li class="social-media__item">
+                      <a class="social-media__link" href=""></a>
+                    </li>
+                    <li class="social-media__item">
+                      <a class="social-media__link" href=""></a>
+                    </li>
                   </ul>
                 </div>
               </div>
             </li>
-            <li>
+            <li class="team-list__item">
               <div>
-                <img src="" alt="" width="" />
+                <img class="team-list__barber-photo" src="" alt="" width="" />
                 <div>
-                  <h3>Alan Black</h3>
-                  <p>Extreme Barber</p>
-                  <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+                  <h3 class="team-list__barber-name">Alan Black</h3>
+                  <p class="team-list__barber-position">Extreme Barber</p>
+                  <ul class="social-media">
+                    <li class="social-media__item">
+                      <a class="social-media__link" href=""></a>
+                    </li>
+                    <li class="social-media__item">
+                      <a class="social-media__link" href=""></a>
+                    </li>
+                    <li class="social-media__item">
+                      <a class="social-media__link" href=""></a>
+                    </li>
+                    <li class="social-media__item">
+                      <a class="social-media__link" href=""></a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -170,15 +259,24 @@
           </ul>
         </div>
       </section>
-      <section class="section">
-        <div class="container">
-          <p>In Latin, "barba" means "beard"</p>
-          <h2 hidden>Portfolio</h2>
-          <ul>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
+      <!-- ------------------------------------------------------------------------------------------------------------------------>
+      <section class="section section--portfolio">
+        <div class="container container--portfolio">
+          <p class="section__overhead-title">In Latin, "barba" means "beard"</p>
+          <h2 class="section__title" hidden>Portfolio</h2>
+          <ul class="portfolio-list">
+            <li class="portfolio-list__item">
+              <img class="portfolio-list__img" src="" alt="" />
+            </li>
+            <li class="portfolio-list__item">
+              <img class="portfolio-list__img" src="" alt="" />
+            </li>
+            <li class="portfolio-list__item">
+              <img class="portfolio-list__img" src="" alt="" />
+            </li>
+            <li class="portfolio-list__item">
+              <img class="portfolio-list__img" src="" alt="" />
+            </li>
           </ul>
         </div>
       </section>
